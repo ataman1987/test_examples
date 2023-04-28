@@ -12,7 +12,7 @@ export const generateContactObject = () => {
     stateProvince: faker.address.stateAbbr(),
     postalCode: faker.address.zipCode(),
     country: faker.address.countryCode(),
-    email: faker.internet.email(),
+    email: faker.internet.email().toLowerCase(),
   };
   return contactObject;
 };
